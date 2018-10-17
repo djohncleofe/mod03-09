@@ -1,0 +1,217 @@
+* {
+	margin: 0;	
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inconsolata', monospace;
+}
+html {
+	scroll-behavior: smooth;
+}
+.nav,
+/*.banner,*/
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: darkgrey;
+	margin: 0 auto; /*center hozizontally*/
+/*	background-image: url(../images/logo.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/ /*for paralax effect meaning the background is fixed*/
+}
+.ilogo {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+}
+.nav {
+	background-color: black;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+}
+.nav:hover {
+	background-color: white;
+}
+ul > li {
+	list-style: none;
+	background-color: black;
+	margin-top: 2px;
+	line-height: 48px; /*base font size = 16px. 16 *3 = 48px;*/
+	text-align: center;
+	border: 2px solid white;
+	color: white;
+	border-radius: 10%;
+}
+
+ul > li > a {
+	text-decoration: none; /*remove bullets form ul and li*/
+	color: white;
+}
+
+ul > li:hover {
+	background-color: white;
+	color: black;
+}
+
+ul > li:hover > a{
+	background-color: white;
+	color: black;
+}
+/*end of nav*/
+
+.main {
+	background-color: black;
+	margin-left: 200px;
+}
+.hbg {
+	width: 100%;
+	height: 100vh;
+}
+
+/*end of main*/
+.banner {
+	background-color: skyblue;
+	height: 100vh;
+	position: relative;
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20%;
+	color: white;
+
+}
+h1 {
+	font-size: 70px;
+}
+
+
+/*end of box*/
+.about {
+	background-image: url(../images/about.jpeg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	color: white;
+}
+.about p {
+	font-size: 20px;
+	float: left;
+}
+.nn {
+	width: 80%;
+	height: 85%;
+	visibility: hidden;
+	float: left;
+	margin-right: 10px;
+	position: absolute;
+}
+.about:hover .nn {
+	visibility: visible
+}
+/*end of about*/
+.services {
+	background-color: black;
+	color: white;
+	height: 100vh;
+}
+h3 {
+	text-align: center;
+}
+h3 > p {
+	text-align: center;
+}
+.column {
+	border: 1px solid white;
+	width: 31%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+	min-height: 400px;
+}
+
+img[alt*="service"] { /*selects all img with alt=service with the use of **/
+	border: 1px solid white;
+	width: 310px;
+	height: 310px;
+	display: block;
+	float: left;
+}
+.no-top {
+	margin-top: 0;
+}
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+}
+.projects {
+	background-image: url(../images/about.jpeg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	color: white;
+}
+.projects p {
+	font-size: 20px;
+}
+.gallery {
+	background-color: black;
+	color: white;
+	height: 100vh;
+}
+.gallery > .column {
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+img[alt*="gallery"] {
+	width: 100%;
+	height: 100px;
+	display: block;
+	border: 1px solid white;
+}
+.galpic {
+	padding: 10px;
+}
+
+/*end of gallery*/
+.footer {
+	background-color: black;
+	color: grey;
+	min-height: 50px;
+}
+img[alt*="social"] {
+	width: 40px;
+	height: 40px;
+	border: 1px solid white;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.contact {
+	float: right;
+}
+/*end of footer*/
+
+h2 {
+	margin-bottom: 10px;
+}
+
